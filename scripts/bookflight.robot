@@ -10,19 +10,21 @@ Login To Application
     Open Browser To Login Page
     Login Page Should Open
     Input Username              mercury
-    Input Password              login
+    Input Password              mercury
     Click Login Button
+    Set Selenium Speed          ${DELAY}
 
 Enter Flight Details
     [Tags]    SIT
-    Enter Flgt Type             OneWay
+    Enter Flgt Type             oneway
     Enter Psngr                 2
     DepFrom                     Frankfurt
     DepOnDate                   April   20
+    ArrIn                       Paris
     RetOnDate                   May     1
 
 Enter Preferences
-    [Tags]    SIT
+    [Tags]    REG
     Enter Serv Class            Business
-    Airline                     UnifiedAirlines
+    Airline                     Unified${SPACE}Airlines
 
