@@ -10,5 +10,5 @@ Login To Application
     Open Browser To Login Page
     Login Page Should Open
     Input Username              mercury
-    Input Password              mercury
+    Input Password              login
     Click Login Button
