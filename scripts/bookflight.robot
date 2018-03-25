@@ -12,3 +12,17 @@ Login To Application
     Input Username              mercury
     Input Password              login
     Click Login Button
+
+Enter Flight Details
+    [Tags]    SIT
+    Enter Flgt Type             OneWay
+    Enter Psngr                 2
+    DepFrom                     Frankfurt
+    DepOnDate                   April   20
+    RetOnDate                   May     1
+
+Enter Preferences
+    [Tags]    SIT
+    Enter Serv Class            Business
+    Airline                     UnifiedAirlines
+
