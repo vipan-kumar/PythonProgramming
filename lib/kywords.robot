@@ -24,3 +24,37 @@ Input Password
 
 Click Login Button
     Click Button                name:login
+
+Enter Flgt Type
+    [Arguments]                 ${FLG_TYPE}
+    Select Radio Button         tripType  ${FLG_TYPE}
+
+Enter Psngr
+    [Arguments]                 ${PSNGR}
+    Select From List By Value   xpath://select[@name="passCount"]     ${PSNGR}
+
+DepFrom
+    [Arguments]                 ${DEP_CITY}
+    Select From List By Label   xpath://select[@name="fromPort"]    ${DEP_CITY}
+
+DepOnDate
+    [Arguments]                 ${DEP_MM}   ${DEP_DD}
+    Select From List By Label   xpath://select[@name="fromMonth"]     ${DEP_MM}
+    Select From List By Label   xpath://select[@name="fromDay"]     ${DEP_DD}
+
+ArrIn
+    [Arguments]                 ${ARR_CITY}
+    Select From List By Label   xpath://select[@name="toPort"]     ${ARR_CITY}
+
+RetOnDate
+    [Arguments]                 ${RET_MM}   ${RET_DD}
+    Select From List By Label   xpath://select[@name="toMonth"]     ${RET_MM}
+    Select From List By Label   xpath://select[@name="toDay"]     ${RET_DD}
+
+Enter Serv Class
+    [Arguments]                 ${DEP_CLS}
+    Select Radio Button         servClass  ${DEP_CLS}
+
+Airline
+    [Arguments]                 ${AIRLINE}
+    Select From List By Label   xpath://select[@name="airline"]     ${AIRLINE}
